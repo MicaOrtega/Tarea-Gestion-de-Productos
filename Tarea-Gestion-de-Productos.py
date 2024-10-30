@@ -42,11 +42,18 @@ def actualizar_producto():
         if producto['nombre'].lower()==nombre.lower():
             while True:
                 try:
+                    print("Introduce el nuevo nombre del producto: ")
+                    nombre = str(input())
+                    break
+                except ValueError:
+                    print("Favor introduzca un nombre valido")
+            while True:
+                try:
                     print("Introduce el nuevo precio del producto: ")
                     precio = float(input())
                     break
                 except ValueError:
-                    print("Favor introduzca el precio nuevo")
+                    print("Favor introduzca un precio valido")
                     
             while True:
                 try:
