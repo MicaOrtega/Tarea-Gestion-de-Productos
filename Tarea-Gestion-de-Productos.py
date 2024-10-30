@@ -63,6 +63,7 @@ def actualizar_producto():
                 except ValueError:
                     print("Favor introduzca una cantidad valida")
             
+            producto['nombre']=nombre
             producto['precio']=precio
             producto['cantidad']=cantidad
             print(f"Producto '{nombre}' actualizado correctamente")
